@@ -1,0 +1,157 @@
+/* 1. Reset: predictable sizing and no default body margin */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: orange;
+  color: #333;
+}
+
+header {
+    background-color: lightblue;
+    padding: 20px;
+    font-family: Arial, sans-serif; 
+}
+
+header p {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+nav ul {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+
+}
+
+nav ul :hover{
+    color:orange;
+
+}
+
+header li {
+    background-color: white;
+    color: white;
+
+}
+
+header h1{
+    text-align: center;
+}
+
+#note-form{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    gap: 10px;
+    margin-top: 20px;
+    
+}
+
+#note-form input, #note-form textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+main{
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.features{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+
+}
+
+ol{
+    list-style: none;
+}
+
+.card{
+    background-color:lightblue;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shortcuts-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.shortcuts-table th,
+.shortcuts-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#feedback-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    gap: 10px;
+    margin-top: 20px;
+    
+}
+
+#name, #email, #message {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#button{
+    background-color: lightblue;
+    transition:background-color 1s ease-in-out;
+}
+
+#button:hover{
+    background-color: orange;
+}
+
+@media (max-width:600px){
+    .features{
+        grid-template-columns: 1fr;
+    }
+    header{
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+section{
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+

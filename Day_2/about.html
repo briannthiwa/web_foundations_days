@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>About QuickNotes</title>
+</head>
+<body>
+    <header>
+        <h1>QuickNotes</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" style="text-decoration: none;">Home</a></li>
+                <li><a href="about.html" style="text-decoration: none;">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>About QuickNotes</h2>
+        <p>QuickNotes is a simple web application designed to help you capture and organize your ideas quickly. Whether you're brainstorming, jotting down reminders, or keeping track of important information, QuickNotes provides a user-friendly platform to manage your notes efficiently.</p>
+        <section>
+            <h3>Getting Started</h3>
+            <p>To start using QuickNotes, simply navigate to the home page and begin adding your notes. You can view your notes in a list format and keep track of the total number of notes you've added.</p>  
+        </section>
+        <br>
+        <section>
+        <h3>How to Use QuickNotes</h3>
+        <ol>
+            <li>To add a new note, type your note in the input field and click the "Add Note" button.</li>
+            <li>Your notes will be displayed in a list below the input field.</li>
+            <li>You can view the total number of notes you have added at any time.</li>
+        </ol>
+        </section>
+        <br>
+        <section>
+        <h3>Features</h3>
+        <ul class="features">
+            <li class="card">Simple and intuitive interface for quick note-taking.</li>
+            <li class="card">Real-time display of your notes as you add them.</li>
+            <li class="card">Count of total notes to keep track of your ideas.</li>
+        </ul>
+        </section>
+        <br>
+        <section>
+            <h3>Keyboard Shortcuts table</h3>
+            <table class="shortcuts-table">
+                <thead class="shortcuts-table-header">
+                    <tr>
+                        <th>Shortcut</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ctrl + N</td>
+                        <td>Add a new note</td>
+                    </tr>
+                    <tr>
+                        <td>Ctrl + D</td>
+                        <td>Delete the selected note</td>
+                    </tr>
+                    <tr>
+                        <td>Ctrl + E</td>
+                        <td>Edit the selected note</td>
+                    </tr>
+                </tbody>    
+            </table>
+        </section>
+    <section>
+        <h3>Send Feedback</h3>
+        <form  id="feedback-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <br>
+            <button type="submit" id="button">Submit</button>
+        </form>
+    </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 QuickNotes. Built during Web Foundations.</p>
+    </footer>
+</body>
+</html>
