@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 - Note Taker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Note Taker</h1>
+        <p>Take notes, save them, and manage your thoughts.</p>
+    </header>
+    <main class="container">
+        <section>
+            <label for="note-text">Your Note:</label>
+            <textarea id="note-text" placeholder="Start typing..."></textarea>
+        </section>
+
+        <section id="status">
+            <div class="status-panel">
+                <p id="char-count">0 / 200 characters</p>
+                <p id="word-count">0 words</p>
+            </div>
+        </section>
+
+        <section id="actions">
+            <div class="actions">
+                <button id="clear-btn">Clear Note</button>
+                <button id="theme-toggle">Dark mode</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
